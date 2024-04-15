@@ -10,7 +10,7 @@ export function cycleDetect(digraph){
   return cycles.reduce( function(a, b){ return a.concat(b) }, []);
 }
 
-function findCyclesInComponent(digraph, component){
+export function findCyclesInComponent(digraph, component){
   let node = component[0];
   let visited = [];
   let cycles = []
